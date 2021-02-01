@@ -1,0 +1,257 @@
+.sidebar {
+    width: 30rem;
+    height: 100vh;
+
+    background-color: #ffffff;
+
+    position: fixed;
+    top: 40px;
+    left: -100%;
+    z-index: 1001;
+    transition: .5s;
+    overflow: auto;
+
+    @media screen and(min-width: 992px) {
+        display: none;
+    }
+}
+
+.sidebar__page {
+    overflow: auto;
+}
+
+.sidebar__header {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.sidebar__catalog {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px #ffcc00 solid;
+    padding-bottom: 1.4rem;
+}
+
+.sidebar__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.6rem;
+
+    background: none;
+    border: none;
+}
+
+.sidebar__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: .25rem;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+
+.show {
+    left: 0;
+}
+
+.sidebar__content {
+    margin-left: 1.7rem;
+}
+
+.sidebar__user-part {
+    width: 15rem;
+    margin-top: 2.5rem;
+}
+
+.sidebar__user-icon {
+    display: block;
+    float: left;
+    color: #79dbf1;
+    font-size: 2.4rem;
+    padding-top: .5rem;
+}
+
+.sidebar__user-profile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    padding-right: .8rem;
+
+    color: $text-color;
+
+    float: right;
+}
+
+.sidebar__user-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+
+    float: right;
+    padding-right: 46px;
+
+    color: #8f8f8f;
+}
+
+.sidebar__favorites {
+    width: 15rem;
+    margin-top: 1.6rem;
+}
+
+.sidebar__bookmark {
+    float: left;
+}
+
+.sidebar__bookmark-btn {
+    font-size: 3rem;
+    padding-top: .5rem;
+    padding-left: 0;
+    border: none;
+    background: none;
+    color: #fbff21;
+}
+
+.sidebar__favorites-staff {
+    float: right;
+    padding-right: 1.7rem;
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: $header-font-size;
+        line-height: $header-line-height;
+        padding-right: .8rem;
+
+        color: $text-color;
+        text-decoration: none;
+    }
+    
+}
+
+.sidebar__favorites-quantity {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-right: 4.1rem;
+    float: right;
+    color: #8f8f8f;
+}
+
+.sidebar__town {
+    margin-top: 1.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.sidebar__location-icon {
+    font-size: 2.6rem;
+    padding-top: .6rem;
+    float: left;
+    color: #00893d;
+}
+
+.sidebar__current-location {
+    float: right;
+    padding-right: 8rem;
+
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: $header-font-size;
+        line-height: $header-line-height;
+        padding-right: .8rem;
+
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+.sidebar__quantity-store {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-right: 19rem;
+    float: right;
+    color: #8f8f8f;
+}
+
+.sidebar__footer {
+    height: 42.7rem;
+    background-color: #f4f4f4;
+}
+.sidebar__nav-list {
+    padding-left: 2.5rem;
+    padding-top: 1.6rem;
+}
+
+.sidebar__nav-item {
+    padding-bottom: 2.4rem;
+}
+
+.sidebar__nav-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.sidebar__call {
+    width: 20rem;
+    margin-top: 2.6rem;
+    padding-left: 2.6rem;
+}
+
+.sidebar__phone-icon {
+    display: block;
+    float: left;
+    padding-top: 5px;
+    font-size: 3rem;
+    color: green;
+}
+
+.sidebar__phone {
+    float: right;
+}
+
+.sidebar__phone-call {
+    margin-left: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.sidebar__call-free {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-right: 1.1rem;
+    float: right;
+    color: #8f8f8f;
+}
+
+.sidebar__download-link {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.app-store,
+.google-play {
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.google-play {
+    padding-bottom: 2rem;
+}
+
+

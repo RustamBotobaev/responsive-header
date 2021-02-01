@@ -1,0 +1,396 @@
+.header {
+    width: 100%;
+    height: 15.2rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0, .4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    // @include braekpoint($desktop-bp) {
+    //     width: 100%;
+    // }
+    @include braekpoint($tablet-bp) {
+        height: 4.8rem;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
+    }
+}
+
+.header__head,
+.header__footer {
+    width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include braekpoint($desktop-bp) {
+        width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    @include braekpoint($tablet-bp) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.header__head {
+    padding-top: 2.1rem;
+
+    @include braekpoint($tablet-bp) {
+        padding-top: 1rem;
+    }
+}
+
+.header__logo {
+    width: none;
+    // margin: 0 auto;
+
+    @include braekpoint($tablet-bp) {
+        margin: 0 auto;
+    }
+
+    // @include braekpoint($mobile-bp) {
+    //     width: none;
+    //     margin: 0 auto;
+    // }
+}
+
+.logo {
+    @include braekpoint($tablet-bp) {
+        width: 150px;
+        height: 19px;
+    }
+}
+
+.header__location-popup {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    color: $text-color;
+    text-decoration: none;
+
+    border: none;
+    background: none;
+
+    @include braekpoint($desktop-bp) {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    color: $primery;
+    text-decoration: none;
+    padding-right: 1.6rem;
+
+    @include braekpoint($desktop-bp) {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+
+    &:hover {
+        text-decoration: underline #ffcc00;
+    }
+}
+
+.btn-visually {
+    height: 3.2rem;
+
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0, .25);
+
+    @include braekpoint($desktop-bp) {
+        height: 3rem;
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.header__phone-call {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+
+    text-decoration: none;
+    color: $text-color;
+
+    @include braekpoint($desktop-bp) {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+
+.header__footer {
+    padding-top: 2.8rem;
+
+    @include braekpoint($tablet-bp) {
+        display: block;
+        float: right;
+    }
+}
+
+.header__catalog {
+    position: relative;
+    width: 20.8rem;
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.header__catalog-icon {
+    margin: 7px 0 0 10px;
+
+    position: absolute;
+    left: 0;
+
+    img {
+        width: 0.9em;
+        height: 0.9em;
+        @include braekpoint($desktop-bp) {
+            width: 0.5em;
+            height: 0.5em;
+        }
+    }
+
+    @include braekpoint($desktop-bp) {
+        display: none;
+    }
+
+}
+
+.goods-map {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: #ffffff;
+
+    padding-left: 3.3rem;
+    height: 4rem;
+
+    background-color: #00893D;
+    box-shadow: 0 4px 4px rgba(0,0,0, .25);
+    border-radius: 10px;
+
+    @include braekpoint($desktop-bp) {
+        height: 3rem;
+        padding-left: 1.5rem;
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 68.8rem;
+
+    @include braekpoint($desktop-bp) {
+        max-width: 48.8rem;
+    }
+
+    // @include braekpoint($tablet-bp) {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 1.5rem;
+    // }
+}
+
+.search__input {
+    width: 100%;
+    height: 4.8rem;
+
+    border: 1px solid #FFCC00;
+    border-radius: 100px;
+
+    @include braekpoint($desktop-bp) {
+        height: 3rem;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.search-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 3px;
+    margin-top: 4px;
+
+    background-color: #ffcc00;
+    border-radius: 100px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include braekpoint($desktop-bp) {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.4rem;
+        margin-right: 3px;
+        margin-top: 2px;
+    }
+
+    @include braekpoint($tablet-bp) {
+        background: none;
+        position: absolute;
+        top: -50px;
+        left: 60px;
+
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    @include braekpoint($mobile-bp) {
+        background: none;
+        position: absolute;
+        top: -50px;
+        left: 60px;
+
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+.header__user-icon {
+    display: block;
+    float: left;
+    color: #00893D;
+    font-size: 2.4rem;
+    padding-top: .5rem;
+
+    @include braekpoint($desktop-bp) {
+        font-size: 1.8rem;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.header__user-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+
+    color: $text-color;
+
+    float: right;
+    
+    @include braekpoint($desktop-bp) {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.header__user-profile {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+
+    color: #8f8f8f;
+
+    @include braekpoint($desktop-bp) {
+        line-height: 1.2rem;
+        font-size: 1rem;
+    }
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.bookmark__btn,
+.bascet__btn {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    padding-top: 5px;
+    color: $primery;
+
+    @include braekpoint($tablet-bp) {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.bascet__btn {
+    @include braekpoint($tablet-bp) {
+        padding-right: 3rem;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.bx-star {
+    transition: all .5s ease;
+
+    &:hover  {
+        color: #ffcc00;
+    }
+
+    @include braekpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.bx-cart {
+    transition: all .5s ease;
+
+    &:hover  {
+        color: #00893d;
+    }
+
+    @include braekpoint($tablet-bp) {
+        color: #4a4a4a;
+        position: absolute;
+        top: 7px;
+        right: 0;
+    }
+
+    @include braekpoint($mobile-bp) {
+        padding-right: 1rem;
+        padding-top: .5rem;
+        color: #4a4a4a;
+        position: absolute;
+        top: 7px;
+        right: 0;
+    }
+}
